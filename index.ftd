@@ -1,40 +1,81 @@
--- ds.page: Welcome to doc-site
+-- import: fastn-community.github.io/inter-typography
 
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+background.solid: #1a1a1a
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- ftd.column:
+background.linear-gradient: $lg
+align-content: center
+width.fixed.px: 400
+height.fixed.px: 500
+padding-horizontal.px: 30
+padding-vertical.px: 10
+types: $inter-typography.types
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- ftd.image:
+src: $just-light
+width.fixed.px: 150
+height.fixed.px: 150
+border-radius.px: 100
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- ftd.text: Atharva Pise
+role: $inherited.types.copy-regular
+padding-top.px: 30
+style: bold
 
--- ds.h3: 🚀 Fast Track 
+-- ftd.text: Freelancer, Web Developer
+role: $inherited.types.copy-regular
+padding-bottom.px: 20
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- button: Dribble
+link: https://dribble.com/
 
--- ds.h3: 🌟 Whats next?
+-- button: Behance
+link: https://behance.com/
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
+-- button: Webflow
+link: https://webflow.com/
 
--- ds.h3: 👀 Want to learn more?
+-- button: LinkedIn
+link: https://linkedin.com/
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- end: ftd.column
 
+-- end: ftd.column
 
--- ds.h3: 🎯 Used by?
+-- ftd.image-src just-light: https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80
 
-Our all documentation sites uses this `doc-site` theme.
+-- component button:
+caption title:
+optional string link:
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- ftd.text: $button.title
+link: $button.link
+border-width.px: 2
+padding.px: 10  
+role: $inherited.types.button-medium
+margin.px: 4           
+border-radius.px: 20     
+width: fill-container
+style: bold                
+text-align: center
+background.solid: white
+open-in-new-tab: true
 
--- ds.h2: Learn fastn and become a pro?
+-- end: button
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.linear-gradient lg: 
+direction: bottom-left 
+colors: $color-values
 
--- end: ds.page
+-- ftd.linear-gradient-color list color-values:
+
+-- ftd.linear-gradient-color: red
+stop-position.percent: 20
+
+-- ftd.linear-gradient-color: yellow
+
+-- end: color-values
